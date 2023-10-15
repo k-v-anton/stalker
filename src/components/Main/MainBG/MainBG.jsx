@@ -8,6 +8,7 @@ export const MainBg = () => {
       <span className={styles.shadow}></span>
       <img className={styles.imgBG} src={imgbg} alt='' />
       <span className={styles.shadow}></span>
+      <span className={styles.bottomShadow}></span>
     </div>
   )
 }
