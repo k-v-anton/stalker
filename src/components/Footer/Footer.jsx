@@ -10,6 +10,15 @@ export const Footer = () => {
           <span className={styles.label}>team</span>
           <span className={styles.year}>2023</span>
         </div>
+        <div className={styles.contacts}>
+          <div className={styles.contact}>
+            тел.: <span>+765-937-99-92</span>
+          </div>
+          <div className={styles.contact}>
+            email: <span>jdi.menia@fik.pridu</span>
+          </div>
+
+        </div>
       </div>
     </div>
   )
