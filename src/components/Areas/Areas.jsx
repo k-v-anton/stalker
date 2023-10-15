@@ -28,26 +28,23 @@ export const Areas = () => {
 
   return (
     <div className={styles.areas}>
-      {data.map((area) => (
-        <div key={area.id} className={styles.wrapper}>
-          
-          
-          <div className={styles.front}>
-            <div className={styles.wrapperMap}>
-              <img className={styles.map} src={area.img} alt='img' />
+      <div className={styles.container}>
+        {data.map((area) => (
+          <div key={area.id} className={styles.wrapper}>
+            <div className={styles.front}>
+              <div className={styles.wrapperMap}>
+                <img className={styles.map} src={area.img} alt='img' />
+              </div>
+              <h2 className={styles.title}>{area.title}</h2>
+              <span className={styles.shadow}></span>
             </div>
-            <h2 className={styles.title}>{area.title}</h2>
-            <span className={styles.shadow}></span>
+
+            <div className={styles.back}>
+              <span>{area.description}</span>
+            </div>
           </div>
-
-
-          <div className={styles.back}>
-            <span>{area.description}</span>
-          </div>
-        </div>
-      ))}
-
-      <div className={styles.popup}></div>
+        ))}
+      </div>
     </div>
   )
 }
