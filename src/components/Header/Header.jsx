@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { useWindowSize } from '../../hooks/useWindowSize'
 import logo from '../../img/header/logo.jpg'
-import { Hamburger } from '../Hamburger/Hamburger'
+import { Hamburger } from './Hamburger/Hamburger'
 import styles from './Header.module.scss'
 
 export const Header = () => {

@@ -1,8 +1,15 @@
 import React from 'react'
 import styles from './Description.module.scss'
+import { description } from '../../data/descriptionData'
 
 export const Description = () => {
   return (
-    <div className={styles.description}>Description</div>
+    <section className={styles.description}>
+      <div className={styles.container}>
+        {
+          description.content.map((path, i) => <span key={i}>{path}</span>)
+        }
+      </div>
+    </section>
   )
 }

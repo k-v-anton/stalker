@@ -3,6 +3,14 @@ import styles from './Footer.module.scss'
 
 export const Footer = () => {
   return (
-    <div className={styles.footer}>Footer</div>
+    <div className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.logoteam}>
+          RoksArt
+          <span className={styles.label}>team</span>
+          <span className={styles.year}>2023</span>
+        </div>
+      </div>
+    </div>
   )
 }

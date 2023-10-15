@@ -1,7 +1,7 @@
 import React from 'react'
-import { dataLink } from '../../data/headerData'
-import { useWindowSize } from '../../hooks/useWindowSize'
-import { Link } from '../Link'
+import { dataLink } from '../../../../data/headerData'
+import { useWindowSize } from '../../../../hooks/useWindowSize'
+import { Link } from './Link'
 import styles from './Navbar.module.scss'
 
 export const Navbar = (props) => {

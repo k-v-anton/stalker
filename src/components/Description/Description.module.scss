@@ -1,5 +1,18 @@
 .description {
   background-color: #000000;
   color: #ffffff;
+  padding: 3em 1em;
   
+  
+}
+
+.container {
+  max-width: 90em;
+  border-radius: 2em;
+  background-color: rgba( #ffffff, .1);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  margin: 0 auto;
 }

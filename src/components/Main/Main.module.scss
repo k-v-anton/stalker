@@ -2,7 +2,7 @@
   background-color: silver;
   overflow: hidden;
   position: relative;
- height: 45em;
+  height: calc(100dvh - 4em);
   z-index: 0;
 }
 
