@@ -1,0 +1,77 @@
+$border-height-size-1: 0.2em;
+$transition-time-1: 0.25s;
+$color-white: #ffffff;
+$border-radius-1: .2em;
+$border-radius-2: .5em;
+$deg-2: 45deg;
+$transition-delay-1: 0.25s;
+$transition-time-9: 1s;
+$margin-main: 1em;
+$transition-time-05: 0.125s;
+
+@mixin hamburger-line($left, $top) {
+  width: 1.8em;
+  position: absolute;
+  left: $left;
+  top: $top;
+  height: $border-height-size-1;
+  transition-duration: $transition-time-1;
+  background-color: $color-white;
+  border-radius: $border-radius-1;
+}
+
+@mixin hamburger-line-open($rotate) {
+  top: 0;
+  transition: 
+    top $transition-time-1, 
+    transform $transition-time-1 $transition-delay-1;
+  transform: rotateZ($rotate);
+}
+
+.hamburger {
+  width: 3em;
+  height: 3em;
+  position: relative;
+  cursor: pointer;
+  transition-duration: $transition-time-9;
+  border-radius: $border-radius-1;
+  border: .2em solid $color-white;
+  border-radius: $border-radius-2;
+  margin-right: $margin-main;
+}
+
+.line {
+  transform: translate(-50%, -50%);
+  transition-delay: $transition-time-1;  
+  @include hamburger-line(50%, 50%);
+  
+  &:before {
+    content: '';
+    @include hamburger-line(0, -0.6rem);
+    transition: 
+      transform $transition-time-1, 
+      top $transition-time-1 $transition-time-1;
+  }
+
+  &:after {
+    content: '';
+    @include hamburger-line(0, 0.6rem);
+    transition: 
+      transform $transition-time-1, 
+      top $transition-time-1 $transition-time-1;
+  }
+}
+
+.open {
+  background: transparent;
+  transition-duration: $transition-time-05;
+  transition-delay: $transition-time-1;
+
+  &:before {
+    @include hamburger-line-open(-45deg);
+  }
+
+  &:after {
+    @include hamburger-line-open(45deg);
+  }
+}

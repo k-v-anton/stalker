@@ -1,0 +1,43 @@
+
+.desctop {
+  display: flex;
+  gap: 1em;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+  
+}
+
+.mobile {
+  position: absolute;
+  right: 0;top: 4em;
+  height: calc(100dvh - 4em);
+  background: #000;
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  transition: clip-path .5s linear;
+
+}
+
+.link {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  transition: scale .25s linear, text-shadow .25s linear;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+    text-shadow: .1em .1em 1em rgb(197, 230, 13), .15em .15em 1.5em rgb(238, 255, 0);
+  }
+
+}
