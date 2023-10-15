@@ -27,7 +27,7 @@ export const Areas = () => {
   ]
 
   return (
-    <div className={styles.areas}>
+    <div className={styles.areas} id='areas'>
       <div className={styles.container}>
         {data.map((area) => (
           <div key={area.id} className={styles.wrapper}>

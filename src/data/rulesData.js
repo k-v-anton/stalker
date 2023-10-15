@@ -1,4 +1,6 @@
-export const rulesData = [
+export const rulesData = {
+  id: 'rules',
+  content: [
   {
     id: 1,
     name: 'ТЮНИНГ ПРИВОДОВ, СТРЕЛЬБА',
@@ -79,4 +81,4 @@ export const rulesData = [
 
 
  
-]
+]}

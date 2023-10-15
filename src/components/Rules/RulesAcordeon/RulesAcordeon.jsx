@@ -5,7 +5,7 @@ import styles from './RulesAcordeon.module.scss'
 export const RulesAcordeon = () => {
   return (
     <div className={styles.acorContainer}>
-      {rulesData.map((el) => (
+      {rulesData.content.map((el) => (
         <>
           <input type='radio' name='acor' id={`acor${el.id}`} checked='checked' />
           <label for={`acor${el.id}`}>{el.name}</label>

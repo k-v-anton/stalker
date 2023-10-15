@@ -18,7 +18,7 @@ export const Navbar = (props) => {
       }
     >
       {dataLink.map((link) => (
-        <Link key={link.id} value={link.value} state={state} setState={setState} />
+        <Link key={link.id} value={link.value} state={state} setState={setState} linkTo={link.linkTo} />
       ))}
     </div>
   )

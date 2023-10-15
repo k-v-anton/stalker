@@ -14,7 +14,7 @@ export const Rulesslide = () => {
     <div className={styles.container}>
     <div className={styles.wrapper}>
       <ul className={styles.list} onClick={handleEnterActiveRule}>
-        {rulesData.map((area, i) => (
+        {rulesData.content.map((area, i) => (
           <li className={styles.ruleName} key={area.id} data-index={i}>
             {area.name}
           </li>
@@ -23,7 +23,7 @@ export const Rulesslide = () => {
     </div>
 
     <div className={styles.description}>
-      {rulesData[state].rule.map((path, i) => (
+      {rulesData.content[state].rule.map((path, i) => (
         <span className={styles.path} key={i}>
           {path}
         </span>
