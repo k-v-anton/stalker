@@ -1,13 +1,14 @@
 import React from 'react'
+import { MainBg } from './MainBG/MainBG'
 import styles from './Main.module.scss'
-import imgbg from '../../img/main/bg.webp'
+import { mainData } from '../../data/mainData'
 
 export const Main = () => {
   return (
     <main className={styles.main}>
-      <div className={styles.background}>
-        <img className={styles.imgBG} src={imgbg} alt="" />
-      </div>
+      <h1 className={styles.title}>{mainData.title}</h1>
+      <MainBg />
+      
     </main>
   )
 }

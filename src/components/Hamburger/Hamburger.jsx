@@ -18,7 +18,7 @@ export const Hamburger = () => {
           <span className={state ? `${styles.line} ${styles.open}` : styles.line}></span>
         </div>
       )}
-      <Navbar show={state} />
+      <Navbar state={state} setState={setState} />
     </>
   )
 }
